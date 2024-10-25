@@ -1,0 +1,55 @@
+.EditTodo {
+  background-color: #2e3440;
+  color: #d8dee9;
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 400px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  text-align: center;
+
+  h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    background-color: #3b4252;
+    color: #d8dee9;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 24px;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+
+    &:focus {
+      outline: none;
+      background-color: #4c566a;
+    }
+  }
+
+  &__update-button,
+  &__goBack-button {
+    background-color: #5e81ac;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 5px;
+
+    &:hover {
+      background-color: #4c566a;
+      transform: translateY(-2px);
+    }
+  }
+
+  &__goBack-button {
+    background-color: #bf616a;
+  }
+}

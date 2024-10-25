@@ -1,0 +1,37 @@
+.Nav {
+  width: 100%;
+  background-color: #25263b;
+  padding: 15px 30px;
+
+  &__container {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+
+    a {
+      color: #eceff4;
+      text-decoration: none;
+      font-size: 24px;
+      padding: 8px 15px;
+      text-transform: capitalize;
+      font-weight: 700;
+      letter-spacing: 2px;
+      transition: color 0.3s ease, background-color 0.3s ease;
+
+      &:hover {
+        background-color: #444;
+        color: #fff;
+        border-radius: 5px;
+      }
+
+      &:active {
+        background-color: #222;
+      }
+    }
+  }
+}
+.active-link {
+  color: #5e81ac !important;
+}
